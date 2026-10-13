@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover AI creators, explore generative portfolios, and bring your next creative campaign to life.">
+  <title>CREOVISION — Find your creative point of view</title>
+  <link rel="stylesheet" href="/theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/app.js"></script>
+</head>
+
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">A creative network for new visual work</span>
+          <h1>The Place Where <span class="gradient-text">Brands and Creators Connect</span></h1>
+          <p>CREOVISION connects India’s brands with independent visual makers working across generative image, motion, and AI-assisted storytelling. Explore their approach, then shape the right brief together.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/discover">Meet the makers <span>↗</span></a>
+            <a class="btn btn-ghost" href="/create-brief">Shape a project brief <span>＋</span></a>
+          </div>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-label="Sample creator avatars"><span class="avatar" title="Arjun Kumar">AK</span><span class="avatar" title="Priya Sharma">PS</span><span class="avatar" title="Karthik Raj">KR</span></div><span>Independent talent. Intentional collaboration.</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="A collage of imaginative AI-generated visual work">
+          <div class="hero-art hero-art-main">
+            <div class="art-caption">Dreams, rendered in motion<small>AI film · Brand world concept</small></div>
+          </div>
+          <div class="hero-art hero-art-left">
+            <div class="art-caption">New dimensions<small>Generative art</small></div>
+          </div>
+          <div class="hero-art hero-art-right">
+            <div class="art-caption">Future, in bloom<small>Visual campaign</small></div>
+          </div>
+          <div class="float-tag" style="top:22%;right:1%">✦ <span>Ideas in good company</span></div>
+          <div class="float-tag" style="bottom:7%;left:4%">✺ Made by humans, with AI</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat"><strong>1,240+</strong><span>Creator profiles</span></div>
+          <div class="stat"><strong>3,800+</strong><span>Portfolio projects</span></div>
+          <div class="stat"><strong>620+</strong><span>Creative briefs</span></div>
+          <div class="stat"><strong>94%</strong><span>Projects completed</span></div>
+        </div>
+        <p class="demo-note">Illustrative sample statistics for this prototype — not live marketplace metrics.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">People making what’s next</span>
+            <h2 class="section-title">Featured <span class="gradient-text">AI creators</span></h2>
+          </div><a class="btn btn-ghost btn-sm" href="/discover">Meet all creators ↗</a>
+        </div>
+        <div class="creator-grid" id="featured-creators"></div>
+      </div>
+    </section>
+
+    <section class="section" style="background:rgba(255,255,255,.018);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border)">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">A window into the possible</span>
+            <h2 class="section-title">Trending <span class="gradient-text">portfolios</span></h2>
+            <p class="section-copy">Cinematic worlds, new visual languages, and unexpected ways to tell a story.</p>
+          </div><a class="btn btn-ghost btn-sm" href="/portfolios">Explore portfolios ↗</a>
+        </div>
+        <div class="portfolio-grid" id="trending-projects"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">Find your creative spark</span>
+            <h2 class="section-title">Browse by <span class="gradient-text">specialization</span></h2>
+          </div>
+        </div>
+        <div class="specialty-grid"><a class="specialty-card" href="/discover?specialty=AI%20Filmmaking"><span class="specialty-icon">🎬</span>
+            <div><strong>AI Filmmaking</strong><span>Cinematic storytelling</span></div>
+          </a><a class="specialty-card" href="/discover?specialty=AI%20Animation"><span class="specialty-icon">✳</span>
+            <div><strong>AI Animation</strong><span>Characters in motion</span></div>
+          </a><a class="specialty-card" href="/discover?specialty=AI%20Product%20Advertising"><span class="specialty-icon">◈</span>
+            <div><strong>Product Advertising</strong><span>Ideas that make a mark</span></div>
+          </a><a class="specialty-card" href="/discover?specialty=AI%20Fashion%20Campaigns"><span class="specialty-icon">✦</span>
+            <div><strong>Fashion Campaigns</strong><span>Style without boundaries</span></div>
+          </a><a class="specialty-card" href="/discover?specialty=AI%20Music%20Videos"><span class="specialty-icon">♫</span>
+            <div><strong>Music Videos</strong><span>Visuals with a rhythm</span></div>
+          </a><a class="specialty-card" href="/discover?specialty=AI%20Character%20Design"><span class="specialty-icon">☻</span>
+            <div><strong>Character Design</strong><span>Personalities from pixels</span></div>
+          </a><a class="specialty-card" href="/discover?specialty=AI%20Motion%20Graphics"><span class="specialty-icon">⟲</span>
+            <div><strong>Motion Graphics</strong><span>Motion with meaning</span></div>
+          </a><a class="specialty-card" href="/discover?specialty=Generative%20Digital%20Art"><span class="specialty-icon">◉</span>
+            <div><strong>Generative Digital Art</strong><span>New forms, made together</span></div>
+          </a></div>
+      </div>
+    </section>
+
+    <section class="section" style="background:rgba(255,255,255,.018);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border)">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">Open calls for creative minds</span>
+            <h2 class="section-title">Recently published <span class="gradient-text">briefs</span></h2>
+          </div><a class="btn btn-ghost btn-sm" href="/briefs">See all briefs ↗</a>
+        </div>
+        <div class="brief-grid" id="home-briefs"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">From idea to incredible</span>
+            <h2 class="section-title">How Creovision <span class="gradient-text">works</span></h2>
+          </div><a class="btn btn-ghost btn-sm" href="/how-it-works">Learn more ↗</a>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">01</div>
+            <h3>Discover your people</h3>
+            <p>Search creator profiles by skill, specialization, tools, budget, and the creative feel you’re after.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">02</div>
+            <h3>Share the big idea</h3>
+            <p>Post a brief with your goals, timeline, and budget. Invite the right collaborators into the conversation.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">03</div>
+            <h3>Make something matter</h3>
+            <p>Align on workflow, deliverables, and licensing, then bring your project from first spark to final delivery.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-panel">
+          <div><span class="eyebrow">A note on trust</span>
+            <h2>Clarity is part of the creative process.</h2>
+            <p>Demo profiles are clearly labeled. On a live marketplace, creators would control their verification and portfolio records.</p>
+          </div><a class="btn btn-ghost" href="/how-it-works#verification">How verification works ↗</a>
+        </div>
+      </div>
+    </section>
+    <section class="section-sm" aria-labelledby="home-faq-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">A few useful details</span>
+            <h2 class="section-title" id="home-faq-title">Before the <span class="gradient-text">first conversation.</span></h2>
+          </div>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <h3>Who is CREOVISION for?</h3>
+            <p>For brands looking for a visual collaborator, and for independent creators who want to show their process and the kind of projects they take on.</p>
+          </article>
+          <article class="step-card">
+            <h3>What does “AI-assisted” mean here?</h3>
+            <p>It describes part of a creator’s toolkit, not a substitute for their craft. Ask about tools, human editing, source materials, and delivery in each project conversation.</p>
+          </article>
+          <article class="step-card">
+            <h3>Are these live marketplace listings?</h3>
+            <p>No. This prototype uses illustrative profiles, project examples, briefs, and statistics. They are not independently verified and do not represent real offers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script>
+    document.getElementById('site-header').innerHTML = header();
+    document.getElementById('site-footer').innerHTML = footer();
+    document.querySelectorAll('.avatar-stack .avatar').forEach((node, index) => {
+      const creator = creators[index];
+      if (!creator) return;
+      node.style.backgroundImage = `url('${creator.avatar}')`;
+      node.textContent = creator.avatarInitials;
+    });
+    document.getElementById('featured-creators').innerHTML = creators.slice(0, 3).map((creator) => creatorCard(creator)).join('');
+    document.getElementById('trending-projects').innerHTML = projectData.slice(0, 3).map(projectCard).join('');
+    document.getElementById('home-briefs').innerHTML = briefs.slice(0, 3).map((brief) => `<article class="brief-card"><span class="pill pill-purple">${brief.type}</span><h3>${brief.title}</h3><p>${brief.description}</p><div class="brief-meta"><span class="tag">${brief.budget}</span><span class="tag">${brief.timeline}</span></div><div class="brief-footer"><span>${brief.company}</span><a href="/briefs">View brief ↗</a></div></article>`).join('');
+
+  </script>
+</body>
+
+</html>
